@@ -1,3 +1,4 @@
+/* ESTILOS GENÉRICOS */
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +12,8 @@
 }
 @font-face {
     font-family: "fuente2";
-    src: url("../FONTS/Roboto_Slab/static/RobotoSlab-Regular.ttf");
+    /* si ponemos la que esta fuera de static se va a daptar al grosor que le marquemos en los h2 y h3 de abajo */
+    src: url("../FONTS/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf");
 }
 @font-face {
     font-family: "fuente3";
@@ -20,17 +22,121 @@
 
 :root{
     --color0:white;
-    --color1:black;
-    --color2:gray;
-    --color3:yellow;
+    --color1:rgb(42, 42, 42);
+    --color2:rgb(119, 119, 119);
+    --color3:rgb(122, 50, 50);
 
     --fuente1:"fuente1";
     --fuente2:"fuente2";
     --fuente3:"fuente3";
+
+    font-family: var(--fuente2);
+}
+h1{
+    font-family: var(--fuente1);
+    font-size: 1.4rem;
+    color: var(--color1);
+}
+h2{
+    font-size: 1.8rem;
+    color: var(--color2);
+    font-weight: 100;
+}
+h3{
+    width: 100%;
+    font-family: var(--fuente2);
+    font-size: 2rem;
+    color: var(--color1);
+    font-weight: 100;
+    text-align: left;
+}
+h4{
+    font-size: 1.2rem;
+    font-family: var(--fuente3);
+    color: var(--color2);
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+p{
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    line-height: 1.6rem;
 }
 
+.boton{
+background-color: var(--color0);
+padding: .5rem 5rem;
+border-radius: 1rem;
+/* border:tiene 3 valores,grosor de linea en px, tipo de linea, color */
+border: .5px solid var(--color1);
 
+font-size: 1.2rem;
+font-family: var(--fuente3);
+color: var(--color2);
+font-weight: 100;
+letter-spacing: 3px;
 
+cursor: pointer;
+}
+
+.boton :hover{
+    background-color: var(--color2);
+    border-color: var(--color0);
+    color: var(--color0);
+    transition: 0.1s;
+}
+
+.boton :active{
+    transform: scale(0.9);
+    transition: 1s;
+
+}
+header .contenedor{
+   background-color: aquamarine; 
+   width: 700px;
+
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
+   
+font-family: var(--fuente1);
+color: var(--color0);
+
+user-select: none;
+}
+header .contenedor :nth-child(1){
+    font-size: 5.2vw;
+    line-height: 8vw;
+}
+header .contenedor :nth-child(2){
+    font-size: 3.4vw;
+    line-height: 3vw;
+}
+header .contenedor :nth-child(3){
+    font-size: 8.2vw;
+    line-height: 8vw;
+}
+header .contenedor :nth-child(4){
+    font-size: 2.7vw;
+    line-height: 2.3vw;
+}
+header .contenedor :nth-child(5){
+    font-size: 5.4vw;
+    line-height: 2.3vw;
+}
+header .contenedor :nth-child(6){
+    font-size: 4.4vw;
+    line-height: 2.3vw;
+}
+header .contenedor :nth-child(7){
+    font-size: 5.4vw;
+    line-height: 3.3vw;
+}
+header .contenedor :nth-child(5){
+    font-size: 5.4vw;
+    line-height: 2.3vw;
+}
 
 
 /* estilos web */
@@ -105,10 +211,31 @@ header{
     background-image:url("../IMG/header_2560.jpg");
     background-size: cover;
     background-attachment: fixed;
+}
+/* MAIN */
 
-    
+/* SECCIÓN PRESENTACIÓN */
+/* ponemos el nombre del id sectPresentacion */
+#sectPresentacion{
+   background-color: rosybrown; 
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+   margin-top: 2rem;
+}
+#sectPresentacion article{
+    background-color: bisque;
+    max-width: 1200px;
+    width: 95%;
+    margin-top: 2rem;
 
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 2rem;
 }
 
 
