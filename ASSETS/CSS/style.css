@@ -107,6 +107,7 @@ color: var(--color0);
 
 user-select: none;
 }
+/* el nth-child es una manera de hacer referencia a un elemento html sin hacer referencia a su clase,su id o su tag. hacemos refernecia la hijo y podemos elegir el nuemro de hijos (:dos puntos porque es seudoclase */
 header .contenedor :nth-child(1){
     font-size: 5.2vw;
     line-height: 8vw;
