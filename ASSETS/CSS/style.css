@@ -76,6 +76,8 @@ color: var(--color2);
 font-weight: 100;
 letter-spacing: 3px;
 
+transition: 1s;
+
 cursor: pointer;
 }
 
@@ -83,12 +85,12 @@ cursor: pointer;
     background-color: var(--color2);
     border-color: var(--color0);
     color: var(--color0);
-    transition: 0.1s;
+    transition: 0.5s;
 }
 
 .boton :active{
     transform: scale(0.9);
-    transition: 1s;
+    transition: 0.1s;
 
 }
 header .contenedor{
@@ -237,6 +239,53 @@ header{
     justify-content: flex-start;
     row-gap: 2rem;
 }
+
+/* contenedor padre=contenedor servicios...como es un id se pone # */
+#contenedorServicios{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    /* wrap para que respete los tamaños que les demos */
+    flex-wrap: wrap;
+}
+#contenedorServicios .servicio{
+    width: 100%;
+    max-width: 550px;
+    min-width: 320px;
+    height: 800px;
+    background-color: aqua;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 1rem;
+} 
+#contenedorServicios .servicio .contenedor_foto{
+width: 100%;
+height: 80%;
+/* hace que los hijos del contenedor foto..si revasan al padre no se van a ver */
+overflow: hidden;
+}
+#contenedorServicios .servicio .contenedor_foto img{
+    width: 100%;
+    height: 100%;
+    /* cubreme el espacio sin desformar la foto */
+    object-fit: cover;
+    object-position: center;
+    /* pone en blanco y negro la foto */
+    filter: saturate(0);
+    transition: 1s;
+}
+#contenedorServicios .servicio .contenedor_foto img:hover{
+    filter: saturate(1);
+    transform: scale(1.2);     
+}
+
+
 
 
 
