@@ -16,9 +16,9 @@
         </div>
         <div class="inf">
             <ul>
-                <li><a href="">Servicios</a></li>
-                <li><a href="">Quienes somos</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="#hitoServicios">Servicios</a></li>
+                <li><a href="#hitoAlbum">Quienes somos</a></li>
+                <li><a href="#hitoEquipo">Contacto</a></li>
             </ul>
         </div>
     </nav>
@@ -34,12 +34,16 @@
                 <p>-Bruno Barbey-</p>
             </div>  
     </header>
-
+   
     <main>
+         <!-- intentar no colocar los hitos dentro de otra caja(ej:section)porque los margenes(row-gap) que tenga definido puede descolocar los elementos -->
+         <div id="hitoServicios"></div>
         <!-- seccion con id en vez de clase. el id es univoco=no puede haber otro elemento html con id igual..tiene que ser un id para un elemento en concreto -->
-        <select id="sectPresentacion">
+        <!-- <section id="sectPresentacion"> -->
+        <section>
             <h2>Nuestros Servicios Fotograficos</h2>
-            <article>
+            
+            <article class="anchoEstrecho">
                 <h3>TUS FOTOGRAFOS EN DONOSTIA</h3>
                 <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. <b>, saepe natus obcaecati,</b> veritatis quaerat vel eligendi excepturi nesciunt animi culpa quisquam corrupti rem molestias debitis autem <b>molestiae</b> numquam? Quas, eligendi?</P>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <b>Nulla possimus facilis repellat reprehenderit libero minus! Cum similique quae, asperiores consequuntur magnam,</b> iusto quo eligendi ex iste,<b>labore</b> voluptas ut enim.</p>
@@ -47,7 +51,7 @@
                     Contactanos
                 </div>
             </article>
-            <article>
+            <article class="anchoEstrecho">
                 <h3>SOMOS UN EQUIPO DE FOTÓGRAFOS PROFECIONALES EN DONOSTIA</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium in cumque ipsam, debitis accusamus consequatur non ea ut <b>voluptatibus voluptatem</b> rerum quaerat facere tempore obcaecati libero illo aspernatur, exercitationem sunt!</p>
                 <div id="contenedorServicios">
@@ -97,7 +101,7 @@
  
                 </div>
             </article>
-         </select>
+        </section>
     </main>
     
 </body>
