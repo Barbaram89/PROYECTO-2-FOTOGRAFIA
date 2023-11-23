@@ -40,6 +40,8 @@
          <div id="hitoServicios"></div>
         <!-- seccion con id en vez de clase. el id es univoco=no puede haber otro elemento html con id igual..tiene que ser un id para un elemento en concreto -->
         <!-- <section id="sectPresentacion"> -->
+
+        <!-- SERVICIOS -->
         <section>
             <h2>Nuestros Servicios Fotograficos</h2>
             
@@ -58,7 +60,7 @@
                     <!-- .servicio*6 para hacer automático, esta cajas van a tener el mismo estilo por eso tienen que ser class para reutilizarla -->
                   <div class="servicio">
                         <div class="contenedor_foto">
-                            <img src="./ASSETS/IMG/servicio_1_600.jpg">
+                            <img src="./ASSETS/IMG/servicio_1_600.jpg" alt="">
                         </div>
                         <h4>Embarazos y bebés</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, culpa?</p>
@@ -102,7 +104,30 @@
                 </div>
             </article>
         </section>
+
+        <!-- SLIDER ALBUM -->
+        <section>
+            <div id="hitoAlbum"></div>
+            <h2>Álbumes Fotograficos a medida</h2>
+            <article>
+                <div id="slider">
+                    <img id="flechaIzd" src="./ASSETS/IMG/flecha_izd.png" alt="">
+                    <img src="flechader" src="./ASSETS/IMG/flecha_der.png" alt="" >
+                    <img id="fotoActiva" orden="1" src="./ASSETS/IMG/slider1_2560.jpg" alt="">
+                </div>
+                <h3 class="anchoEstrecho">El mejor álbum fotográfico para recordar los momentos especiales</h3>
+                <p class="anchoEstrecho">Lorem ipsum dolor sit amet consectetur ><b>adipisicing elit</b>. Alias minus recusandae obcaecati! Doloremque vero est expedita magni in. Quia eligendi <b>temporibus illo</b>  soluta quae adipisci rerum debitis distinctio ratione!</p>
+            </article>
+        </section>
+
+        <!-- EQUIPO -->
+        <section>
+            <div id="hitoEquipo"></div>
+        </section>
     </main>
+    <footer>
+    </footer>
+    <script src="./ASSETS/js/slider.js"></script>
     
 </body>
 </html>
