@@ -1,5 +1,13 @@
 /* DECLARACIÓN DE VARIABLES */
 
+var mivariableNumero;
+var num1, num2, resultado;
+
+
+
+
+
+
 var numFotos = 12;/* número total de fotos para el slider */
 var ordenPrincipal, ordenSiguiente;
 var intervalo, temporizador;
